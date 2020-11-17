@@ -7,6 +7,16 @@ export const MainTemplate = ({ title, children }) => {
       <div className="sidebar-container">
         <div className="sidebar-logo">Incremental Airlines</div>
         <ul className="sidebar-navigation">
+          <li
+            className="header"
+            style={{
+              backgroundColor: "gold",
+              color: "black",
+              fontWeight: "bold",
+            }}
+          >
+            Budget actuel : 1000 €
+          </li>
           <li className="header"> Prestations</li>
           <li>Prestations disponible</li>
           <li className="header">Flotte</li>
