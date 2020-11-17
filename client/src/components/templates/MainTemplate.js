@@ -1,12 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { MyMeca } from "../MyMeca";
+import { Link } from "react-router-dom";
 
 export const MainTemplate = ({ title, children }) => {
   return (
     <>
       <div className="sidebar-container">
-        <div className="sidebar-logo">Incremantal Airlines</div>
+        <div className="sidebar-logo">Incremental Airlines</div>
         <ul className="sidebar-navigation">
           <li className="header"> Prestations</li>
           <li>Prestations disponible</li>
