@@ -9,13 +9,13 @@ app.use(express.json());
 app.use(cors("http://localhost:3000"));
 app.use(morgan("common"));
 
-// app.use(express.static(path.join(__dirname, "./client/build")));
+app.use(express.static(path.join(__dirname, "./client/build")));
 
-const port = 4000;
+const port = process.env.PORT || 4000;
 
-app.get("/", (req, res) => {
-  res.status(200).send("yeboi");
-});
+// app.get("/", (req, res) => {
+//   res.status(200).send("yeboi");
+// });
 
 app.listen(port, () => {
   `Connected to the matrix @ ${port}`;
